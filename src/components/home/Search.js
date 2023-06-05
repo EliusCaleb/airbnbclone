@@ -5,9 +5,11 @@ import "react-date-range/dist/theme/default.css"
 import { DateRangePicker } from 'react-date-range';
 import { Button } from '@material-ui/core';
 import PeopleIcon from "@material-ui/icons/People"
+import { useNavigate } from 'react-router-dom';
 
 
 function Search() {
+  const navigate = useNavigate()
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date ());
 
@@ -30,7 +32,7 @@ function Search() {
 
        <input  min={0} defaultValue={2} type='number
        '/>
-       <Button>Search AirBnB</Button>
+       <Button onClick={ ()=> navigate("/search")}>Search AirBnB</Button>
     </div>
   )
 }
