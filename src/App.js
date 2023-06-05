@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react'
 import Home from './components/home/Home';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,10 +12,7 @@ function App() {
          {/* home  of app  */}
           <Header/>
           <Home/>
-
-         {/* searchPage  of the app*/}
-
-         {/* Footer  */}
+          <Footer/>
     
     </div>
   );
